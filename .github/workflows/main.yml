@@ -7,13 +7,13 @@ name: CIF Syntax and Style Check
 on:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - '.github/**'
 
   pull_request:
     branches:
-      - main
+      - master
     paths-ignore:
       - '.github/**'
 
