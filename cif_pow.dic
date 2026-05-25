@@ -15,7 +15,7 @@ data_CIF_POW
     _dictionary.title             CIF_POW
     _dictionary.class             Instance
     _dictionary.version           2.5.0
-    _dictionary.date              2026-05-18
+    _dictionary.date              2026-05-19
     _dictionary.uri
 https://raw.githubusercontent.com/COMCIFS/Powder_Dictionary/master/cif_pow.dic
     _dictionary.ddl_conformance   4.2.0
@@ -14214,7 +14214,7 @@ save_REFLN
     _definition.id                REFLN
     _definition.scope             Category
     _definition.class             Loop
-    _definition.update            2016-11-09
+    _definition.update            2026-05-19
     _description.text
 ;
     The CATEGORY of data items used to describe the reflection data
@@ -14228,6 +14228,7 @@ save_REFLN
          '_refln.id'
          '_pd_refln.phase_id'
          '_refln.diffractogram_id'
+         '_refln.structure_id'
 
 save_
 
@@ -14459,7 +14460,7 @@ save_
 
        Deprecated _pd_refln.wavelength_id after consultation with PDDMG.
 ;
-         2.5.0                    2026-05-18
+         2.5.0                    2026-05-19
 ;
        ## Retain above version number and increment date until final
        ## release
@@ -14713,5 +14714,8 @@ save_
        Changed import order of MULTIBLOCK_CORE and CIF_IMG_HEAD such that
        MULTIBLOCK_CORE is first. This changes the order in which categories
        are defined so that CIF_IMG_HEAD cannot block definitions in
+       MULTIBLOCK_CORE.
+
+       Added _refln.structure_id as key to REFLN to maintain compatibilty with
        MULTIBLOCK_CORE.
 ;
